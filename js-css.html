@@ -1,0 +1,234 @@
+<link type="text/css" rel="stylesheet" href="http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/css/reset.css"/>
+<link type="text/css" rel="stylesheet" href="http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/css/style.css"/>
+<style type="text/css">
+
+/* Basic Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    color: #000;
+}
+ul {
+    padding: 0;
+    margin-left: 25px;
+}
+a:hover {
+    text-decoration: none;
+}
+/* Lists */
+.innerbox ul li {
+    background: url("http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/images/squarebullet.gif") no-repeat scroll 0px 8px transparent;
+    list-style: none;
+    margin-left: 5px;
+    line-height: 21px;
+    padding-left: 11px;
+}
+
+/* List items with Links */
+.innerbox ul li a, ul li.subject_link ul.guide_links li a {
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+    text-decoration: none;
+}
+
+.innerbox ul li a:hover, ul li.subject_link ul.guide_links li a:hover {
+    color: #a51c30;
+}
+
+/* Force lists in the left or right column to a smaller margin */
+#leftboxes ul, #rightboxes ul {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+/* Research Guide title */
+h1 .guidetitle {
+    font-size: 24px;
+    margin: 0.75em 0px;
+    font-weight: bolder;
+}
+
+/* Guide Attributes
+   #guideattr/.guideattr
+   displays the date laste updated, permanent link, and print/email icons
+   forced to the bottom of the page with moveAttributes()
+   see footer code
+   Hide the Guide Attributes' Original Location */
+#guideattr {
+    display: none;
+}
+
+/* Tabs
+   #tabsI, #tabs12 */
+#tabsI ul, #tabs12 ul {
+    font-size: 16px;
+    list-style: none outside none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#tabsI li, #tabs12 li {
+    display: block;
+    float: left;
+    padding: 0px 5px;
+    margin: 0.75em 5px 0 5px;
+}
+#tabsI a, #tabs12 a {
+    padding: 0;
+}
+#tabsI a span, #tabs12 a span{
+    color: rgb(102, 102, 102);
+    display: block;
+    float: left;
+    font-size: 0.8em;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: normal;
+}
+#tabsI a:hover span, #tabs12 a:hover span {
+    color: rgb(165, 28, 48);
+    display: block;
+    float: left;
+    font-size: 0.8em;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+#tabsI #current, #tabs12 #current {
+    background: url("http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/images/active-tab-img.gif") repeat-x scroll 0px 0px transparent;
+    border-left: 1px solid rgb(204, 204, 204);
+    border-right: 1px solid rgb(204, 204, 204);
+    border-top: 1px solid rgb(204, 204, 204);
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 5;
+}
+#tabsI #current span, #tabs12 #current span {
+    font-weight: bold;
+}
+#tabsI, #tabs12 {
+    border-bottom: 1px solid rgb(204,204,204);
+    margin-top: 0.75em;
+}
+#tabsI a span, #tabs12 a span, #tabsI a, #tabs12 a {
+    background: none;
+}
+
+/* Hide redundant tab title and gradient */
+#guide_tab_title_bar_page_name, #guide_tab_title_bar {
+    display: none;
+}
+
+/* Boxes */
+.headerbox{
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.headerbox h2 {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background: url("http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/images/dividerbg.gif") repeat-x scroll 0% bottom transparent;
+    padding: 10px 0 10px 1px;
+    border: 0;
+}
+
+/* Force round boxes to not have rounded corners */
+div.roundbox.outerbox {
+border-radius: 0; !important
+}
+.outerbox {
+    background: url("http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/images/dividerblackbg.gif") repeat-x scroll 0% 0% transparent;
+    width: 100%;
+    padding: 0;
+    margin-left: 1px;
+    border: 0;
+}
+.stitle {
+    background:none;
+}
+.divider {
+    clear: both;
+}
+
+/* Subject Lists
+   Transform Nested lists into expandable lists and layout in columns see Footer
+   */
+.column, .floatcols {
+    float: left;
+    width: 49%;
+    padding: 0;
+    margin: 0;
+}
+
+.column-wrapper {
+    overflow: hidden;
+}
+
+ul#mylistid{
+    width: 100%;
+    padding: 0;
+}
+
+li.subject_link {
+    padding:2px 0;
+    margin: 2px 6px;
+    list-style-type: none;
+    font-size: 1.15em !important;
+}
+
+li.subject_link:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+li.subject_link a.toggle_button, li.subject_link a.toggle_button:hover {
+    text-decoration: none; 
+    text-align: center;
+    color: #666;
+    background: #ddd;
+    border: 1px solid #ccc;
+    font-weight:bold;
+    margin: auto 6px auto 0;
+    padding:1px 3px;
+    display:inline-block;
+    width:15px;
+    cursor: pointer;
+}
+
+span.toggletext {
+    cursor: pointer;
+}
+
+ul.guide_links {
+    margin: 6px 0px 6px 13px;
+    padding: 0;
+    line-height 1.5em;
+}
+
+.innerbox ul li.subject_link {
+    background: none; 
+}
+.innerbox ul li.subject_link a {
+    padding: 1px 3px;
+}
+
+/* Footer */
+#footer {
+clear: both;
+background: none repeat scroll 0% 0% rgb(51, 51, 51);
+font-family: Arial,Helvetica,sans-serif;
+border: none;
+margin-top: 50px;
+padding: 33px 12px 21px 13px;
+color: rgb(102, 102, 102);
+font-size: 10px;
+font-weight: bold;
+line-height: 18px;
+}
+#footer a {
+color: rgb(153,153,153);
+font-weight: bold;
+}
+</Style>
