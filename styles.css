@@ -1,0 +1,12 @@
+/* Basic header styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    color: #000;
+}
+
+/* Research Guide titel */
+h1 .guidetitle {
+    font-size: 24px;
+    margin: 0.75em 0px;
+    font-weight: bolder;
+}
