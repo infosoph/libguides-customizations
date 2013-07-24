@@ -3,12 +3,12 @@
 <link type="text/css" rel="stylesheet" href="http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/css/style.css"/>
 
 <!--[if lte IE 7]>
-<link type="text/css" rel="stylesheet" href="http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/css/ie7.css?mnz87i" media="all" />
-<![endif]-->
+    <link type="text/css" rel="stylesheet" href="http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/css/ie7.css?mnz87i" media="all" />
+    <![endif]-->
 
 <!--[if lte IE 8]>
-<link type="text/css" rel="stylesheet" href="http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/css/ie8.css?mnz87i" media="all" />
-<![endif]-->
+    <link type="text/css" rel="stylesheet" href="http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/css/ie8.css?mnz87i" media="all" />
+    <![endif]-->
 <script type="text/javascript" src="http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/js/uservoice.js?mnz87i"></script>
 <style type="text/css">
 
@@ -50,11 +50,42 @@ a:hover {
     margin-left: 0px;
     margin-right: 10px;
 }
+/* Top Nav */
+.myacctellusholder {
+    width: 985px;
+}
+.myacctellusholdersub {
+    width: 400px;
+}
+/* Breadcrumbs */
+#breadcrumbsl, #breadcrumbsr {
+    padding: 0 21px;
+}
+
 /* Research Guide title */
+#guide_header_title, #guide_header_title h1, span.lgsearch {
+    display: block;
+    float: left;
+}
+#guide_header_title {
+    width: 100%;
+} 
+#guide_header_title h1, span.lgsearch {
+    width: 40%;
+}
+span.lgsearch {
+    float: right;
+    margin: 18px 0;
+    padding-right: 10px;
+}
+#guide_header_title h1 {
+    padding-top: 0;
+}
 h1 .guidetitle {
     font-size: 24px;
     margin: 0.75em 0px;
     font-weight: bolder;
+    padding-left: 21px;
 }
 
 /* Guide Attributes
@@ -80,7 +111,7 @@ h1 .guidetitle {
     display: block;
     float: left;
     padding: 0px 5px;
-    margin: 0.75em 5px 0 5px;
+    margin: 0 5px 0 5px;
 }
 #tabsI a, #tabs12 a {
     padding: 0;
@@ -116,7 +147,6 @@ h1 .guidetitle {
 }
 #tabsI, #tabs12 {
     border-bottom: 1px solid rgb(204,204,204);
-    margin-top: 0.75em;
 }
 #tabsI a span, #tabs12 a span, #tabsI a, #tabs12 a {
     background: none;
@@ -129,8 +159,8 @@ h1 .guidetitle {
 
 /* Page Colums */
 #contentcenter #centerboxes {
-margin-right: 20px;
-margin-left: 21px;
+    margin-right: 20px;
+    margin-left: 21px;
 }
 /* Boxes */
 .headerbox{
@@ -151,7 +181,7 @@ margin-left: 21px;
 
 /* Force round boxes to not have rounded corners */
 div.roundbox.outerbox {
-border-radius: 0; !important
+    border-radius: 0; !important
 }
 .outerbox {
     background: url("http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/images/dividerblackbg.gif") repeat-x scroll 0% 0% transparent;
@@ -165,6 +195,7 @@ border-radius: 0; !important
 }
 .divider {
     clear: both;
+    height: 3px;
 }
 
 /* Subject Lists
@@ -231,19 +262,19 @@ ul.guide_links {
 
 /* Footer */
 #footer {
-clear: both;
-background: none repeat scroll 0% 0% rgb(51, 51, 51);
-font-family: Arial,Helvetica,sans-serif;
-border: none;
-margin-top: 50px;
-padding: 33px 12px 21px 13px;
-color: rgb(102, 102, 102);
-font-size: 10px;
-font-weight: bold;
-line-height: 18px;
+    clear: both;
+    background: none repeat scroll 0% 0% rgb(51, 51, 51);
+    font-family: Arial,Helvetica,sans-serif;
+    border: none;
+    margin-top: 50px;
+    padding: 33px 12px 21px 13px;
+    color: rgb(102, 102, 102);
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 18px;
 }
 #footer a {
-color: rgb(153,153,153);
-font-weight: bold;
+    color: rgb(153,153,153);
+    font-weight: bold;
 }
 </Style>
