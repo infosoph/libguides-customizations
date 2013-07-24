@@ -1,38 +1,19 @@
-<!-- Move Guide Attributes into the Footer -->
 <script type="text/javascript">
-function moveAttributes() {
-    try {
-    // Check for myPID var to determine if this is a guide.
-    if ( typeof(myPID) != 'undefined' ) {
-    var attr_obj = document.getElementById('guideattr');
-    var footer_obj = document.getElementById('footer');
-    var sattr_content = attr_obj.innerHTML;
-
-    attr_obj.innerHTML = '';
-    attr_obj.style.height = '0px';
-
-    footer_obj.innerHTML = '<div class="guide_attr">' + sattr_content + '</div>' + footer_obj.innerHTML;
-    }
-    } catch (e) {}
-}
-
-moveAttributes();
-</script>
-<script type="text/javascript">
-function moveElement (source,target)
+function appendElement (source,target)
 {
     try {
         if ( typeof (myPID) != 'undefined' )
-            {
-                var sourceObj = document.querySelectorAll(source);
-                var targetObj = document.querySelectorAll(target);
+        {
+            var sourceObj = document.querySelectorAll(source);
+            var targetObj = document.querySelectorAll(target);
                 targetObj[ 0 ].appendChild(sourceObj[ 0 ]);
-                }
         }
+    }
     catch (e) {}
 }
 
-moveElement("span.lgsearch","div#guide_header_title");
+appendElement("span.lgsearch","div#guide_header_title");
+appendElement("div#guideattr","div#footer");
 </script>
 
 <!-- JQuery columns for Expanding Subject List -->
