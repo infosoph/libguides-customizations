@@ -18,6 +18,22 @@ function moveAttributes() {
 
 moveAttributes();
 </script>
+<script type="text/javascript">
+function moveElement (source,target)
+{
+    try {
+        if ( typeof (myPID) != 'undefined' )
+            {
+                var sourceObj = document.querySelectorAll(source);
+                var targetObj = document.querySelectorAll(target);
+                targetObj[ 0 ].appendChild(sourceObj[ 0 ]);
+                }
+        }
+    catch (e) {}
+}
+
+moveElement("span.lgsearch","div#guide_header_title");
+</script>
 
 <!-- JQuery columns for Expanding Subject List -->
 <script src="http://demo.libguides.com/data/custom/1/jquery.columns.js"></script>
