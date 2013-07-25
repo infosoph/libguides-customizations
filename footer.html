@@ -1,3 +1,4 @@
+<!-- Move an element  -->
 <script type="text/javascript">
 function appendElement (source,target)
 {
@@ -12,7 +13,9 @@ function appendElement (source,target)
     catch (e) {}
 }
 
+<!-- Move the search box next to the page title -->
 appendElement("span.lgsearch","div#guide_header_title");
+<!-- Move the permalink, print/share icons to the footer -->
 appendElement("div#guideattr","div#footer");
 </script>
 
@@ -54,4 +57,16 @@ appendElement("div#guideattr","div#footer");
 
   });
   })(jQuery);
+</script>
+
+<!-- Search All Guides by Default -->
+<script type="text/javascript">
+  if (document.homesearch.what) {
+    len = document.homesearch.what.length;
+    for (i=0;i<len ;i++ ) {
+      if (document.homesearch.what.options[i].text == 'All Guides') {
+        document.homesearch.what.options[i].selected = true;
+      }
+    }
+  }
 </script>
