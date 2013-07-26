@@ -164,8 +164,10 @@ h1 .guidetitle {
 }
 
 /* Force round boxes to not have rounded corners */
-div.roundbox.outerbox {
+div.roundbox.outerbox, div.roundbox {
     border-radius: 0; !important
+    -moz-border-radius: 0; !important
+    -webkit-border-radius: 0; !important
 }
 .outerbox {
     background: url("http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/images/dividerblackbg.gif") repeat-x scroll 0% 0% transparent;
