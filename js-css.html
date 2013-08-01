@@ -62,9 +62,14 @@ a:hover {
 }
 
 /* Research Guide title */
-.guidetitle, .guidetags, .lgsearch, #guide_header_title h1, #guide_header_title h1 span img { 
+.guidetitle, .guidetags, .lgsearch, .guidedesc, #guide_header_title h1, #guide_header_title h1 span img { 
     display: block;
     float: left;
+}
+.guidedesc {
+    width: 50%;
+    font-size: 12px;
+    font-style: italic;
 }
 .guidetags {
 clear: both;
@@ -80,6 +85,7 @@ span.lgsearch {
 }
 #guide_header_title h1 {
     padding-top: 0;
+    margin-bottom: 0;
 }
 
 h1 .guidetitle {
@@ -94,7 +100,7 @@ h1 .guidetitle {
 #tabsI ul, #tabs12 ul {
     font-size: 16px;
     list-style: none outside none;
-    margin: 0px;
+    margin-top: 18px;
     padding: 0px;
 }
 
@@ -147,7 +153,10 @@ h1 .guidetitle {
 #guide_tab_title_bar_page_name, #guide_tab_title_bar {
     display: none;
 }
-
+/* Make sure the guide content clears any previous float */
+#content {
+    clear: both;
+}
 /* Page Colums */
 #contentcenter #centerboxes {
     margin-right: 20px;
