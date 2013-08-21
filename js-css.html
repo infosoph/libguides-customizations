@@ -24,13 +24,19 @@ a:hover {
 }
 /* Lists */
 .innerbox ul li {
-    background: url("http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/images/squarebullet.gif") no-repeat scroll 0px 8px transparent;
+    background: url("http://library.harvard.edu/sites/all/themes/HarvardLibraryPortalTheme/images/squarebullet.gif") no-repeat scroll 0px 7px transparent;
     list-style: none;
     margin-left: 5px;
     line-height: 21px;
     padding-left: 11px;
 }
-
+#sidelist li {
+    background-position: 0px 4px !important;
+    margin-top: 2px;
+}
+.innerbox #sidelist ul li {
+   padding: 0 0 0 11px;
+}
 /* List items with Links */
 .innerbox ul li a, ul li.subject_link ul.guide_links li a {
     font-size: 12px;
@@ -58,6 +64,8 @@ a:hover {
 /* Breadcrumbs */
 #breadcrumbsl, #breadcrumbsr {
     padding: 0 21px;
+    font-weight: normal;
+    font-size: 12px;
 }
 
 
