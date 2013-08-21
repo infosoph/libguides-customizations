@@ -1,0 +1,12 @@
+<project>
+  <name>LibGuides</name>
+  <number>50</number>
+  <emailFrom></emailFrom>
+  <preText><![CDATA[
+  <div style="font-size: 90%; font-family: Arial, Helvetica, sans-serif; font-weight:normal">
+  <p>Use this form to request support or report a problem with <a href="http://guides.library.harvard.edu">LibGuides</a>. </p></div>
+  ]]></preText>
+  <categories>
+    <category value="Default">Default</category>
+  </categories>
+</project>
