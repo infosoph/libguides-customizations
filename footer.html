@@ -22,39 +22,38 @@ appendElement("div#guideattr","div#footer");
 <!-- JQuery columns for Expanding Subject List -->
 <script src="http://demo.libguides.com/data/custom/1/jquery.columns.js"></script>
 <script type="text/javascript">
-    // Contributors: Dan Brubaker Horst, Laura J. Harris, thorbroo (#code4lib), Erin R. White, Derik Badman.
-    // Code is licensed under a Creative Commons Atrribution license: http://creativecommons.org/licenses/by/3.0/us
+      // Contributors: Dan Brubaker Horst, Laura J. Harris, thorbroo (#code4lib), Erin R. White, Derik Badman.
+      // Code is licensed under a Creative Commons Atrribution license: http://creativecommons.org/licenses/by/3.0/us
 
-    //compatibility mode for $ namespace (which might get used by other js libraries) better to use jQuery in these cases
-    jQuery.noConflict();
+      //compatibility mode for $ namespace (which might get used by other js libraries) better to use jQuery in these cases
+      jQuery.noConflict();
 
-    // Wrapping with: (function($){ ...code...})(jQuery); replaces '$' with 'jQuery'.
-    (function($){
-    $(document).ready(function() {
-$('#myScript').remove();
-// creates the columns through the column plug loaded above
-$('.mylist').columns({columns: 2});
-  // 'hide' function is called on each of the 'ul' elements with the class 'guide_links'
-  $('div.subject_guides').hide();
+      // Wrapping with: (function($){ ...code...})(jQuery); replaces '$' with 'jQuery'.
+      (function($){
+      $(document).ready(function() {
+  $('#myScript').remove();
+  // creates the columns through the column plug loaded above
+  $('.mylist').columns({columns: 2});
+      // 'hide' function is called on each of the 'ul' elements with the class 'guide_links'
+      $('div.subject_guides').hide();
 
-    $('li.subject_link').wrapInner('<a class="toggle_button" href="#"/>');
-    $('a.toggle_button').prepend('<span class="toggle">+</span');
-    // enable toggle action on each subject li
-    $('li.subject_link').bind("click", function(){
-    // toggles text in the link between '+' and '-'.
-    if($(this).find('span.toggle').text() == '+'){
-    $(this).find('span.toggle').text('-');
-    } else {
-    $(this).find('span.toggle').text('+');
-    }
-    // toggle the div container
-    var div = $(this).find('.subject_guides');
-    $(div).slideToggle('fast', function() {
-    // Animation complete.
-    });
-    });
-    });
-    })(jQuery);
+      // enable toggle action on each subject li
+      $('a.toggle_button').bind("click", function(){
+      // toggles text in the link between '+' and '-'.
+      if($(this).find('span.toggle').text() == '+'){
+      $(this).find('span.toggle').text('-');
+      } else {
+      $(this).find('span.toggle').text('+');
+      }
+      // toggle the div container
+      var div = $(this).next('.subject_guides');
+      $(div).slideToggle('fast', function() {
+      // Animation complete.
+      });
+      });
+      });
+      })(jQuery);
+
     </script>
 <!-- Search All Guides by Default -->
 <script type="text/javascript">
