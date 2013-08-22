@@ -45,7 +45,7 @@ a:hover {
     text-decoration: none;
 }
 
-.innerbox ul li a:hover, ul li.subject_link ul.guide_links li a:hover {
+.innerbox ul li a:hover, ul li.subject_link ul.guide_links li a:hover, .subject_name:hover {
     color: #a51c30;
 }
 
@@ -233,13 +233,12 @@ li.subject_link {
     list-style-type: none;
     font-size: 1.15em !important;
 }
-
-li.subject_link:hover {
-    background: #eee;
-    cursor: pointer;
+h2.subject_name {
+    display: inline;
+    font: 1.15em normal Arial, Helvetica, sans-serif ;
 }
 
-li.subject_link a.toggle_button, li.subject_link a.toggle_button:hover {
+li.subject_link a.toggle_button span.toggle, li.subject_link a.toggle_button:hover span.toggle {
     text-decoration: none; 
     text-align: center;
     color: #666;
